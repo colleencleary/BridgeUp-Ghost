@@ -26,7 +26,7 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
       <p width="auto">Veronika</p>
     </div> <div align="center" width=80px>
       <img src="https://lumiere-a.akamaihd.net/v1/images/v2sabine-happy-200x200px_0004f40c.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">  
-      <p width="auto">Vythia</p>
+      <p width="auto">Vithya</p>
     </div> <div align="center" width=80px>
       <img src="https://lumiere-a.akamaihd.net/v1/images/v2chopper-waving-200x200px_c4dcc95f.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">
       <p width="auto">Zoe</p>
@@ -85,10 +85,10 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
   | d30  |January 29 |Tuesday | [Chat with Katie Cleary (Software Engineer)](units/unit_3/d30/notes)| Code Build |
   | d31 |January 31 |Thursday | [](units/unit_3/d31/notes)| [](units/unit_3/d31/labs)|
   | d32 |February 5 |Tuesday | **No Session Today** |
-  | d33 |February 7 |Thursday | [](units/unit_3/d33/notes)| [](units/unit_3/d33/labs)|
+  | d33 |February 7 |Thursday | [](units/unit_3/d33/notes)| Code Build|
   |  |February 8 - February 10 | | **Hackathon** |
   | d34 |February 12 |Tuesday | **No Session Today** |
-  | d35 |February 14 |Thursday | [](units/unit_3/d35/notes)| [](units/unit_3/d35/labs)|
+  | d35 |February 14 |Thursday | Code Build |
   |  |February 18 - February 22 | | **Mid-Winter Recess** |
   | d36 |February 26 |Tuesday | **Resume Building Workshop** |
   | d37 |February 28 |Thursday | **HTML/CSS Workshop** |
@@ -96,12 +96,12 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
 ### Unit 4
   | Day | Date        | Weekday | Lessons     | Labs        |
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
-  | d38 |March 5 |Tuesday | [](units/unit_4/d38/notes)| [](units/unit_4/d38/labs)|
-  | d39 |March 7 |Thursday | [](units/unit_4/d39/notes)| [](units/unit_4/d39/labs)|
-  | d40 |March 12 |Tuesday | [](units/unit_4/d40/notes)| [](units/unit_4/d40/labs)|
-  | d41 |March 14 |Thursday | [](units/unit_4/d41/notes)| [](units/unit_4/d41/labs)|
-  | d42 |March 19 |Tuesday | [](units/unit_4/d42/notes)| [](units/unit_4/d42/labs)|
-  | d43 |March 21 |Thursday | [](units/unit_4/d43/notes)| [](units/unit_4/d43/labs)|
+  | d38 |March 5 |Tuesday | [](units/unit_4/d38/notes)| Code Build |
+  | d39 |March 7 |Thursday | [](units/unit_4/d39/notes)| Code Build |
+  | d40 |March 12 |Tuesday | [](units/unit_4/d40/notes)| Code Build |
+  | d41 |March 14 |Thursday | [](units/unit_4/d41/notes)| Code Build |
+  | d42 |March 19 |Tuesday | [](units/unit_4/d42/notes)| Code Build |
+  | d43 |March 21 |Thursday | [](units/unit_4/d43/notes)| |
   | d44 |March 26 |Tuesday | [](units/unit_4/d44/notes)| [](units/unit_4/d44/labs)|
   | d45 |March 28 |Thursday | [](units/unit_4/d45/notes)| [](units/unit_4/d45/labs)|
   | d46 |April 2 |Tuesday | [](units/unit_4/d46/notes)| [](units/unit_4/d46/labs)|

@@ -100,7 +100,7 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
   | d39 |March 7 |Thursday | [](units/unit_4/d39/notes)| Code Build |
   | d40 |March 12 |Tuesday | [](units/unit_4/d40/notes)| Code Build |
   | d41 |March 14 |Thursday | [](units/unit_4/d41/notes)| Code Build |
-  | d42 |March 19 |Tuesday | [](units/unit_4/d42/notes)| Code Build |
+  | d42 |March 19 |Tuesday | [](units/unit_4/d42/notes)| [Code Build](units/unit_4/d42/labs/continuecodebuild.md) |
   | d43 |March 21 |Thursday | [](units/unit_4/d43/notes)| |
   | d44 |March 26 |Tuesday | [](units/unit_4/d44/notes)| [](units/unit_4/d44/labs)|
   | d45 |March 28 |Thursday | [](units/unit_4/d45/notes)| [](units/unit_4/d45/labs)|

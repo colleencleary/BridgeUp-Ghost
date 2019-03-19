@@ -5,42 +5,78 @@
  - Continue working on your For-loops to add the new_objects data to the Database.
 
   1. new_objects column names needed for parallax table
+
     1. 'PARALLAX'
+
     2. 'PARALLAX_ERROR'
 
+
   2. new_objects column names needed for proper_motions table
+
     1. 'PMRA'
+
     2. 'PMRA_ERROR'
+
     3. 'PMDEC'
+
     4. 'PMDEC_ERROR'
+
   3. new_objects column names needed for photometry table
+
     1. 'PHOT_G_MEAN_MAG'
+
     2. 'PHOT_G_MEAN_MAG_ERROR'
+
     3. 'PHOT_BP_MEAN_MAG'
+
     4. 'PHOT_BP_MEAN_MAG_ERROR'
+
     5. 'PHOT_RP_MEAN_MAG'
+
     6. 'PHOT_RP_MEAN_MAG_ERROR'
+
     7. 'TMASSJ'
+
     8. 'TMASSJERR'
+
     9. 'TMASSH'
+
     10. 'TMASSHERR'
+
     11. 'TMASSK'
+
     12. 'TMASSKERR'
+
     13. 'WISEW1'
+
     14. 'WISEW1ERR'
+
     15. 'WISEW2'
+
     16. 'WISEW2ERR'
+
     17. 'WISEW3'
+
     18. 'WISEW3ERR'
+
     19. 'GUNNG'
+
     20. 'GUNNGERR'
+
     21. 'GUNNR'
+
     22. 'GUNNRERR'
+
     23. 'GUNNI'
+
     24. 'GUNNIERR'
+
     25. 'GUNNZ'
+
     26. 'GUNNZERR'
+
     27. 'GUNNY'
+
     28. 'GUNNYERR'
 
 
@@ -48,6 +84,7 @@ Work with your same partner from Thursday (slack the group when you're finished!
 
 
 The `len()` of each of your tables should be:
+
   1. `len(parallax_data)` = 456
 
   2. `len(propermotions_data)` = 456

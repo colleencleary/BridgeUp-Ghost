@@ -6,9 +6,9 @@
 
   1. new_objects column names needed for parallax table
 
-    1. 'PARALLAX'
+      1. 'PARALLAX'
 
-    2. 'PARALLAX_ERROR'
+      2. 'PARALLAX_ERROR'
 
 
   2. new_objects column names needed for proper_motions table

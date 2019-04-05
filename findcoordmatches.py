@@ -86,13 +86,12 @@ def plotCoords(db_sources, matches, new_objects):
 # import gaia csv
 gaia_catalogue = pd.read_csv('gaia_data/all_catalog.csv')
 # import bdnyc database
-db = astrodb.Database('BDNYCdb_practice/bdnycdev.db')
+db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 
 
 # load matches and new_objects csvs
 matches = pd.read_csv('matches.csv', index_col=0)
 new_objects = pd.read_csv('new_objects.csv', index_col=0)
-
 
 
 # ===============================================
@@ -103,7 +102,6 @@ new_objects = pd.read_csv('new_objects.csv', index_col=0)
 # db_sources = db.query('SELECT * FROM sources', fmt='pandas')
 
 
-
 # ===============================================
 # sort data into matches and not matches and save as new csv files
 # ===============================================
@@ -112,39 +110,49 @@ new_objects = pd.read_csv('new_objects.csv', index_col=0)
 # saveCSVfiles(matches, new_objects)
 
 
-
 # ===============================================
 # Workspace
 # ===============================================
 
 #drop empty spaces and first character J from shortname
-matches.SHORTNAME = matches.SHORTNAME.str.replace('J', '').str.strip()
-
+# matches.SHORTNAME = matches.SHORTNAME.str[2:]
 
 # create new empty list to store data we want to add to database
 data = list()
 
-# append the column names (as they're written in the BDNYC database) to match on the appropriate column
-data.append(['source_id','parallax', 'parallax_unc','publication_shortname', 'comments'])
+# append the column name (as it's written in the BDNYC database) to match on the appropriate column
+data.append(['source_id'])
+data
+
+ # loop through the shortnames from our "matches" dataframe
+for i in matches.SHORTNAME:
+    # search the BDNYCdb sources table for each shortname and store the results in a variable
+    results = db.search(i, "sources", fetch=True)['id']
+    # if there is only ONE result, append the id to our list variable "data"
+    if (len(results)==1):
+        data.append(results[0])
+    elif (len(results)>1):
+    # if there is MORE THAN ONE result, just print a note
+        print('more than one match')
+    else:
+    # if there are NO results, print a note
+        print('no matches')
 
 
-# loop through the "matches" dataframe
 for i in range(len(matches)):
-   results = db.search(matches.iloc[[i]].SHORTNAME.values[0], "sources", fetch=True)
-   if (len(results['id'])==1):
-       data.append([results['id'][0], matches.iloc[[i]]['PARALLAX'].values[0], matches.iloc[[i]]['PARALLAX_ERROR'].values[0], 'GaiaDR2', 'added by SpectreCell'])
-       # print(matches.iloc[[i]])
-   elif (len(results['id'])>1):
-       print(i,'has more than one match')
-   else:
-       print(i, 'has no matches')
+    results = db.search((matches['RA'].iloc[i], matches['DEC'].iloc[i]), 'sources', radius=0.00278, fetch=True)
+    if len(results) == 1:
+        data.append([results['id'][0]])
+    elif len(results)>1:
+    # if there is MORE THAN ONE result, just print a note
+        print('more than one match')
+    else:
+    # if there are NO results, print a note
+        print('no matches')
+
+
+
+
 
 # add data to BDNYC database
-db.add_data(data, 'sources')
-
-
-
-# Add G_magnitude, BP(blue photometry), RP(red photometry)--not flux
-# New csv for questionable objects with comments column
-    # Triple entry is parallax for higher mass star (not the brown dwarf)
-# Try using ra and dec (within 10 arcseconds)
+db.add_data(data, 'parallaxes')
